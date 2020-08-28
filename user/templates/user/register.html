@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block loginPage %}
+<div class="col-md-6 col-sm-12 d-none d-md-block p-0 m-0" style="background-image:url({% static 'images/login_cover/login_cover.jpg' %});background-size:cover;background-repeat:no-repeat;">
+   <img src="  " width="100%"/>
+</div>
+<div class="col-md-6 col-sm-12 p-4 ">
+    <form action="register" method="POST" id="registers" enctype="multipart/form-data " class=" pl-5 pr-5 pb-4 pt-3 mt-3 card curve shadow-lg text-center col-md-10 col-sm-12 offset-md-1">
+       <img src="{% static 'images/logo/colabbar_logo.svg' %}  " width="250px" class="rounded mx-auto d-block p-4"/>
+        <h4 class="text-pink"> Register Now</h4>
+        <h6 class="text-primary pb-2"> Become a Part of Pakistan 1st Social Network</h6>
+
+                     {% csrf_token %}
+                    <div class="form-group">
+
+                     <input type="text" class="col-12" id="username"  name="username" placeholder="User Name" onfocusout="check_user_taken();">
+                    <p id="username_error" class="small  alert alert-danger col-12 mt-3 mb-0 badge text-danger show-hover"></p>
+                    </div>
+                    <div class="form-group">
+                     <input type="text" class="" id="fullname"  name="fullname" placeholder="Full Name"  >
+                    </div>
+                <div class="form-group">
+                     <input type="email" class="" id="email"  name="email" placeholder="Email">
+                    <p id="useremail_error" class="small  alert alert-danger col-12 mt-3 mb-0 badge text-danger show-hover"  ></p>
+                    </div>
+                     <div class="form-group">
+                     <input type="number" class="" id="phoneno"  name="phoneno" placeholder="Phone No e.g (+92 301 2345678)" >
+                    </div>
+                   <div class="form-group">
+                     <input type="password" class="" id="password"  name="password" placeholder="Password"   onkeyup="check_register('check');return passwordChanged();" >
+                       <div class="row pl-3 pr-3 pb-0 mb-0 pt-2">
+                        <span class=" small text-left col-6  badge text-dark  show-hover" >strength :<span id="strength" class="text-danger">Weak </span> </span>
+                        <span class=" small text-right col-6 badge text-primary show-hover" id="showhover"  onclick="myFunction();">show</span>
+
+                       </div>
+
+                      </div>
+
+
+                    <div class="form-group " >
+                     <input type="submit" class="myButton" id="register"  name="register" Value="Sign up" >
+
+                    </div>
+                   <span class=" h6   text-dark ">Already have an account? <a class=" text-primary" href="{% url 'login' %}">login</a></span>
+                </form>
+</div>
+    {% endblock %}
+

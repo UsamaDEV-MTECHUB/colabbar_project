@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block index_page %}
+<div class="h1 text-center mt-5 pt-5  col-12  "><img src="{% static 'images/logo/colabbar_logo.svg' %}  " width="500px"/>
+<div class="h3 text-center  text-primary ">Pakistan's First Social Networking Site</div>
+    <div class=" text-center   " style="font-size: 7vw;font-weight:bold;color:#FF9600;">Coming Soon</div>
+</div>
+
+
+     <div class="  col-12 pt-0 mt-0  ">
+         <a class=" myButton offset-md-5" href="#"><i class="fa fa-sign-in mr-1" aria-hidden="true"></i>  Login   </a>
+
+        <a class=" myButton-outline ml-2" href="{% url 'register' %}" ><i class="fa fa-user-plus mr-1"></i> Register   </a>
+
+     </div>
+    {% endblock %}

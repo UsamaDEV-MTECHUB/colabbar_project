@@ -1,0 +1,190 @@
+
+
+.rounded-50 {
+border-radius:20px;
+}
+.myButton-outline {
+  border-radius: 10px;
+
+
+  font-size: 1rem;
+  padding: 9px 20px;
+  color: #FF0046;
+  font-weight:bold;
+  text-align:center;
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #FF9600, #FF0046);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+}
+
+.myButton-outline:hover {
+  box-shadow: none;
+  color: white;
+  text-decoration:none;
+  transition: linear .2s;
+}
+
+
+.myButton-nooutline {
+  border-radius: 10px;
+    font-size: 1rem;
+  padding: 9px 20px;
+  color: #FF0046;
+  font-weight:bold;
+
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #FF9600, #FF0046);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+}
+
+.myButton-nooutline:hover {
+  box-shadow: none;
+  color: white;
+  text-decoration:none;
+  transition: linear .2s;
+}
+
+
+.myButton {
+  border-radius: 10px;
+
+box-shadow: none;
+  color: white;
+  font-size: 1rem;
+  padding: 9px 20px;
+
+  font-weight:bold;
+  text-align:center;
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #FF9600, #FF0046);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+
+}
+
+.myButton:hover {
+  color: #FF0046;
+  box-shadow: 2px 1000px 1px #fff inset;
+  text-decoration:none;
+  transition: linear .2s;
+}
+
+
+
+
+ input{
+  width:100%;
+  border:2px solid lightgrey;
+
+  padding:10px;
+  border-radius:10px;
+}   input:focus {
+  border:2px solid #FF9600;
+}
+.show-hover {
+}
+.show-hover:hover {
+cursor:pointer;
+}
+.text-pink {
+color :#ff0028;}
+.text-blue {
+color :#3901DC;}
+.curve {
+border-radius:10px;}
+
+.disable_btn {
+  opacity: 0.5;
+  border-radius: 10px;
+    cursor: no-drop;
+box-shadow: none;
+  color: white;
+  font-size: 1rem;
+  padding: 9px 20px;
+
+  font-weight:bold;
+  text-align:center;
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #FF9600, #FF0046);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.border-pink {
+border: solid 3px #ff0028;
+padding:10px;
+border-radius:50px;
+
+}
+.border-warning {
+border: solid 3px #FFC107;
+padding:10px;
+border-radius:50px;
+
+}.border-success {
+border: solid 3px green;
+padding:10px;
+border-radius:50px;
+
+}
+.stick {
+position: -webkit-sticky;
+  position: sticky;
+  top: 100;}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+
+}
+
+.sidenav a {
+
+  text-decoration: none;
+
+
+  display: block;
+  transition: 0.3s;
+}
+
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.bg-pink {
+background-color:#ff0028;
+}
+
+.icon_pink {
+color:grey;
+
+}
+.icon_pink:hover {
+color:#ff0028;
+transition:.4s;
+text-decoration:none;
+
+}
